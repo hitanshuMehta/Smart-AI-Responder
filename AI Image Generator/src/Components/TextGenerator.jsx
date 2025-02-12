@@ -118,7 +118,7 @@ const TextGenerator = () => {
 
   useEffect(()=>{
     setApiKey(import.meta.env.VITE_REACT_APP_API_KEY)
-    console.log(apiKey)
+    // console.log(apiKey)
   }, [])
 
   const textGenerate = async () => {
