@@ -191,3 +191,7 @@
         width: 100%;
     }
 }
+
+.copy-icon{
+    cursor: pointer;
+}
