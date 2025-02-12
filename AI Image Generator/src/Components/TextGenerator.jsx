@@ -114,12 +114,12 @@ const TextGenerator = () => {
   const [loading, setLoading] = useState(false);
   const inputRef = useRef(null);
   const [copied, setCopied] = useState(false); // State to track if text is copied
-  // const [apiKey, setApiKey] = useState();
+  const [apiKey, setApiKey] = useState();
 
-  // useEffect(()=>{
-  //   setApiKey(import.meta.env.VITE_REACT_APP_API_KEY)
-  //   // console.log(apiKey)
-  // }, [])
+  useEffect(()=>{
+    setApiKey(import.meta.env.VITE_REACT_APP_API_KEY)
+    // console.log(apiKey)
+  }, [])
 
   const textGenerate = async () => {
     const prompt = inputRef.current.value.trim();
@@ -134,7 +134,7 @@ const TextGenerator = () => {
     inputRef.current.value = ""; // Clear input field
 
     setLoading(true);
-    const apiKey = process.env.VITE_REACT_APP_API_KEY;
+    // const apiKey = process.env.API_KEY;
     // const apiKey = import.meta.env.REACT_APP_API_KEY;
     // console.log(apiKey);
     try {
