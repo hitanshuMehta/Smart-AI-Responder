@@ -103,7 +103,7 @@
 
 
 
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./TextGenerator.css";
 import { RingLoader } from "react-spinners";
 import { CopyToClipboard } from "react-copy-to-clipboard";
@@ -114,6 +114,12 @@ const TextGenerator = () => {
   const [loading, setLoading] = useState(false);
   const inputRef = useRef(null);
   const [copied, setCopied] = useState(false); // State to track if text is copied
+  const [apiKey, setApiKey] = useState();
+
+  useEffect(()=>{
+    setApiKey(import.meta.env.VITE_REACT_APP_API_KEY)
+    console.log(apiKey)
+  }, [])
 
   const textGenerate = async () => {
     const prompt = inputRef.current.value.trim();
@@ -129,7 +135,7 @@ const TextGenerator = () => {
 
     setLoading(true);
     // const apiKey = process.env.API_KEY;
-    const apiKey = import.meta.env.REACT_APP_API_KEY;
+    // const apiKey = import.meta.env.REACT_APP_API_KEY;
     // console.log(apiKey);
     try {
       const response = await fetch(
