@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import "./TextGenerator.css";
+import "./TextResponder.css";
 import { RingLoader } from "react-spinners";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
@@ -76,7 +76,7 @@ const TextGenerator = () => {
   return (
     <div className="ai-text-generator">
       <div className="header">
-        AI Text <span>Generator</span>
+      Smart AI  <span>Responder</span>
       </div>
 
       <div className="search-box">
@@ -84,7 +84,7 @@ const TextGenerator = () => {
           type="text"
           ref={inputRef}
           className="Search-input"
-          placeholder="Describe the text you want to generate..."
+          placeholder="Describe the response you want to generate..."
           autoFocus
           onKeyDown={handleKeyDown}
         />

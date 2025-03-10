@@ -1,4 +1,4 @@
-import TextGenerator from './Components/TextGenerator'
+import TextGenerator from './Components/TextResponder'
 
 function App() {
 
