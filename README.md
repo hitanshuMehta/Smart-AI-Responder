@@ -7,7 +7,7 @@ It utilizes the **Google Gemini API** to generate relevant answers in real time.
 The application features a **clean UI, loading animations, and a copy-to-clipboard function** for an enhanced user experience.  
 
 ---
-![Smart AI Responder]([https://raw.githubusercontent.com/hitanshuMehta/Tic-Tac-Toe-Game/main/Tic%20Tac%20Toe/src/assets/Image.png](https://github.com/hitanshuMehta/Smart-AI-Responder/blob/d6478cfed18131a2c866a774e19c6c457ff6f1a5/Smart%20AI%20Responder/src/assets/Image.png))
+![Smart AI Responder](https://raw.githubusercontent.com/hitanshuMehta/Smart-AI-Responder/main/Smart%20AI%20Responder/src/assets/Image.png)
 
 ## 🛠️ Tech Stack
 
